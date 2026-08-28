@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: #FAF9F6;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+}
+
+#book-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+}
+
+#book-details form {
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    width: 1000px;
+    height: 200px;
+    border-radius: 20px;
+    border: solid 2px black;
+    padding-left: 20px;
+}
+
+#book-details label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#book-details label:nth-child(-n+3) input{
+    width: 190px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+#book-details input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    order: -1;
+}
+
+#book-details input[type='submit']{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(57, 57, 231);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 260px;
+    border-radius: 20px;
+    border: solid 2px black;
+    padding: 20px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.book p:first-child {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.book label {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+    font-weight: 900;
+}
+
+.book label input {
+    width: 20px;
+    height: 20px;
+}
+
+.book button {
+    width: 125px;
+    height: 40px;
+    background-color: red;
+    font-size: 20px;
+    font-weight: 900;
+    border-style: none;
+    border-radius: 10px;
+    margin-top: auto;
+}
